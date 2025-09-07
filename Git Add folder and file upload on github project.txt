@@ -1,0 +1,72 @@
+
+MD SHAHINUR RAHMAN@SHAHINURRAHMANRONY MINGW64 ~/Desktop/mvcpush
+$ git init
+Initialized empty Git repository in C:/Users/MD SHAHINUR RAHMAN/Desktop/mvcpush/.git/
+
+MD SHAHINUR RAHMAN@SHAHINURRAHMANRONY MINGW64 ~/Desktop/mvcpush (master)
+$ git add .
+
+MD SHAHINUR RAHMAN@SHAHINURRAHMANRONY MINGW64 ~/Desktop/mvcpush (master)
+$ git commit -m "Initial Commit"
+[master (root-commit) cb360c4] Initial Commit
+ Committer: SHAHINUR <MD SHAHINUR RAHMAN@SHAHINURRAHMANRONY.bhaluka.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 4 files changed, 103 insertions(+)
+ create mode 100644 data-1757154573913.csv
+ create mode 100644 data-1757226823501.csv
+ create mode 100644 data-1757227040349.csv
+ create mode 100644 "\342\200\246or create a new repository on the.txt"
+
+MD SHAHINUR RAHMAN@SHAHINURRAHMANRONY MINGW64 ~/Desktop/mvcpush (master)
+$ git branch -M main
+
+MD SHAHINUR RAHMAN@SHAHINURRAHMANRONY MINGW64 ~/Desktop/mvcpush (main)
+$ git remote add origin https://github.com/shahinurcmt45/mvcpush.git
+
+MD SHAHINUR RAHMAN@SHAHINURRAHMANRONY MINGW64 ~/Desktop/mvcpush (main)
+$ git push -u origin main
+To https://github.com/shahinurcmt45/mvcpush.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/shahinurcmt45/mvcpush.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+MD SHAHINUR RAHMAN@SHAHINURRAHMANRONY MINGW64 ~/Desktop/mvcpush (main)
+$ git pull origin main --rebase
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 874 bytes | 33.00 KiB/s, done.
+From https://github.com/shahinurcmt45/mvcpush
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> origin/main
+Successfully rebased and updated refs/heads/main.
+
+MD SHAHINUR RAHMAN@SHAHINURRAHMANRONY MINGW64 ~/Desktop/mvcpush (main)
+$ git push -u origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 953 bytes | 953.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/shahinurcmt45/mvcpush.git
+   33f1637..375a251  main -> main
+branch 'main' set up to track 'origin/main'.
+
+MD SHAHINUR RAHMAN@SHAHINURRAHMANRONY MINGW64 ~/Desktop/mvcpush (main)
+$
